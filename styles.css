@@ -6,4 +6,8 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+#cards-container {
+  background-image: url("images/bg-main-mobile.png");
+}
+
 /*# sourceMappingURL=styles.css.map */
