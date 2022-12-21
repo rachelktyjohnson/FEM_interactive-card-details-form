@@ -53,19 +53,23 @@ body main {
 #cards-container .card-front .card-front-content .card-number {
   font-size: 1.3rem;
   margin-bottom: 20px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
 }
 #cards-container .card-front .card-front-content .card-name {
   text-transform: uppercase;
   font-size: 0.7rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
 }
 #cards-container .card-front .card-front-content .card-expiry {
   position: absolute;
   right: 0;
   bottom: 0;
   font-size: 0.7rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
 }
 
 #cc-form {
+  display: none;
   max-width: 325px;
   width: 100%;
   margin-top: 70px;
@@ -83,20 +87,28 @@ body main {
 #cc-form .form-control label {
   text-transform: uppercase;
   font-size: 0.75rem;
-  letter-spacing: 1px;
-  color: #21092f;
+  letter-spacing: 2px;
+  color: hsl(278deg, 68%, 11%);
+  font-weight: bold;
 }
 #cc-form .form-control input {
   margin-top: 5px;
   width: 100%;
   padding: 15px;
   border-radius: 5px;
-  border: #dedddf 1px solid;
+  border: hsl(270deg, 3%, 87%) 1px solid;
   outline: 0;
   font-size: 1rem;
 }
 #cc-form .form-control input::placeholder {
-  color: #dedddf;
+  color: hsl(270deg, 3%, 87%);
+  font-size: 1.2rem;
+}
+#cc-form .form-control input:focus {
+  border-color: black;
+}
+#cc-form .form-control input.invalid {
+  border-color: hsl(0deg, 100%, 66%);
 }
 #cc-form .form-control .expiry-date-fields {
   display: flex;
@@ -104,9 +116,15 @@ body main {
 #cc-form .form-control .expiry-date-fields label:last-child {
   margin-left: 5px;
 }
+#cc-form .form-control .hint {
+  color: hsl(0deg, 100%, 66%);
+  font-size: 0.7rem;
+  margin-top: 5px;
+  display: none;
+}
 #cc-form button {
   width: 100%;
-  background: #21092f;
+  background: hsl(278deg, 68%, 11%);
   color: white;
   border: 0;
   outline: 0;
@@ -116,7 +134,14 @@ body main {
 }
 
 #state-complete {
-  display: none;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#state-complete a button {
+  width: 100%;
+  background: hsl(279deg, 6%, 55%);
 }
 
 /*# sourceMappingURL=styles.css.map */

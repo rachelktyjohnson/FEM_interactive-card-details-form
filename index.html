@@ -26,7 +26,7 @@
                 <p class="card-name">Jane Appleseed</p>
                 <p class="card-expiry">00/00</p>
             </div>
-        </div>
+        </div>6256+
     </div>
     <form id="cc-form">
         <div class="form-control">
@@ -36,19 +36,22 @@
         <div class="form-control">
             <label for="card_number">Card Number</label>
             <input type="text" id="card_number" name="card_number" placeholder="e.g. 1234 5678 9123 0000"/>
+            <p class="hint">Wrong format, numbers only</p>
         </div>
         <div class="form-control form-control-date">
             <div class="expiry-date">
-                <label>Expiry Date (MM/YY)</label>
+                <label>Exp. Date (MM/YY)</label>
                 <div class="expiry-date-fields">
                     <label><input type="text" id="expiry_month" name="expiry_month" placeholder="MM"/></label>
                     <label><input type="text" id="expiry_year" name="expiry_year" placeholder="YY"/></label>
                 </div>
+                <p class="hint">Can't be blank</p>
             </div>
 
             <div class="cvc">
                 <label for="cvc">CVC</label>
                 <input type="text" id="cvc" name="cvc" placeholder="e.g. 123"/>
+                <p class="hint">Can't be blank</p>
             </div>
         </div>
         <button type="submit">Confirm</button>
