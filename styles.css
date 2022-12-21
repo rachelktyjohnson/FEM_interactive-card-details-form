@@ -134,14 +134,34 @@ body main {
 }
 
 #state-complete {
+  max-width: 325px;
+  width: 100%;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+#state-complete h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: hsl(278deg, 68%, 11%);
+  margin: 30px 0;
+}
+#state-complete a {
+  width: 100%;
+}
 #state-complete a button {
   width: 100%;
-  background: hsl(279deg, 6%, 55%);
+  margin: 50px 0;
+  background: hsl(278deg, 68%, 11%);
+  color: white;
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
