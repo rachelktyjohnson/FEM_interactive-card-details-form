@@ -13,6 +13,13 @@ body main {
   justify-content: center;
   width: 100%;
 }
+@media (min-width: 600px) {
+  body main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+  }
+}
 
 #cards-container {
   max-width: 375px;
@@ -23,6 +30,13 @@ body main {
   position: relative;
   height: 240px;
 }
+@media (min-width: 600px) {
+  #cards-container {
+    height: 100%;
+    max-width: 100%;
+    background-image: url("images/bg-main-desktop.png");
+  }
+}
 #cards-container .card-back, #cards-container .card-front {
   width: 285px;
   position: absolute;
@@ -30,8 +44,19 @@ body main {
 #cards-container .card-back img, #cards-container .card-front img {
   width: 100%;
 }
+@media (min-width: 600px) {
+  #cards-container .card-back, #cards-container .card-front {
+    width: 450px;
+  }
+}
 #cards-container .card-back {
   right: 15px;
+}
+@media (min-width: 600px) {
+  #cards-container .card-back {
+    bottom: 190px;
+    right: -215px;
+  }
 }
 #cards-container .card-back .card-back-content .ccv-number {
   color: white;
@@ -40,8 +65,22 @@ body main {
   top: 70px;
   font-size: 0.7rem;
 }
+@media (min-width: 600px) {
+  #cards-container .card-back .card-back-content .ccv-number {
+    right: 60px;
+    top: 112px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+}
 #cards-container .card-front {
   top: 125px;
+}
+@media (min-width: 600px) {
+  #cards-container .card-front {
+    top: 190px;
+    right: -115px;
+  }
 }
 #cards-container .card-front .card-front-content {
   color: white;
@@ -50,15 +89,32 @@ body main {
   left: 25px;
   width: 240px;
 }
+@media (min-width: 600px) {
+  #cards-container .card-front .card-front-content {
+    bottom: 30px;
+    left: 35px;
+    width: 385px;
+  }
+}
 #cards-container .card-front .card-front-content .card-number {
   font-size: 1.3rem;
   margin-bottom: 20px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
 }
+@media (min-width: 600px) {
+  #cards-container .card-front .card-front-content .card-number {
+    font-size: 2.1rem;
+  }
+}
 #cards-container .card-front .card-front-content .card-name {
   text-transform: uppercase;
   font-size: 0.7rem;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+}
+@media (min-width: 600px) {
+  #cards-container .card-front .card-front-content .card-name {
+    font-size: 0.9rem;
+  }
 }
 #cards-container .card-front .card-front-content .card-expiry {
   position: absolute;
@@ -69,10 +125,16 @@ body main {
 }
 
 #cc-form {
-  display: none;
   max-width: 325px;
   width: 100%;
   margin-top: 70px;
+}
+@media (min-width: 600px) {
+  #cc-form {
+    margin-top: 0;
+    margin-left: 350px;
+    max-width: 380px;
+  }
 }
 #cc-form .form-control {
   margin: 25px 0;
@@ -90,6 +152,11 @@ body main {
   letter-spacing: 2px;
   color: hsl(278deg, 68%, 11%);
   font-weight: bold;
+}
+@media (min-width: 600px) {
+  #cc-form .form-control label {
+    font-weight: lighter;
+  }
 }
 #cc-form .form-control input {
   margin-top: 5px;
@@ -134,12 +201,18 @@ body main {
 }
 
 #state-complete {
+  display: none;
   max-width: 325px;
   width: 100%;
   margin-top: 100px;
-  display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 600px) {
+  #state-complete {
+    max-width: 380px;
+    margin-left: 350px;
+  }
 }
 #state-complete h1 {
   text-transform: uppercase;
