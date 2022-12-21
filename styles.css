@@ -103,7 +103,8 @@ body main {
 }
 @media (min-width: 1140px) {
   #cards-container .card-front .card-front-content .card-number {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
   }
 }
 #cards-container .card-front .card-front-content .card-name {
@@ -114,6 +115,7 @@ body main {
 @media (min-width: 1140px) {
   #cards-container .card-front .card-front-content .card-name {
     font-size: 0.9rem;
+    letter-spacing: 1px;
   }
 }
 #cards-container .card-front .card-front-content .card-expiry {
@@ -122,6 +124,11 @@ body main {
   bottom: 0;
   font-size: 0.7rem;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+}
+@media (min-width: 1140px) {
+  #cards-container .card-front .card-front-content .card-expiry {
+    letter-spacing: 2px;
+  }
 }
 
 #cc-form {
