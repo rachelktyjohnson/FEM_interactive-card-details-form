@@ -58,7 +58,7 @@ body main {
     right: -215px;
   }
 }
-#cards-container .card-back .card-back-content .ccv-number {
+#cards-container .card-back .card-back-content .cvc-number {
   color: white;
   position: absolute;
   right: 32px;
@@ -66,7 +66,7 @@ body main {
   font-size: 0.7rem;
 }
 @media (min-width: 1140px) {
-  #cards-container .card-back .card-back-content .ccv-number {
+  #cards-container .card-back .card-back-content .cvc-number {
     right: 60px;
     top: 112px;
     font-size: 0.9rem;
